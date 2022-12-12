@@ -1,5 +1,5 @@
 import "./categpries.styles.scss";
-import CategoryItem from "./components/category-item/category-itme.component.jsx";
+import Category from "./components/categories/categories-component.jsx";
 const App = () => {
   const categories = [
     {
@@ -29,12 +29,6 @@ const App = () => {
     },
   ];
 
-  return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key={category.id} category={category} />
-      ))}
-    </div>
-  );
+  return <Category categories={categories} />;
 };
 export default App;
