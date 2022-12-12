@@ -1,3 +1,4 @@
+import "./categpries.styles.scss";
 const App = () => {
   const categories = [
     {
