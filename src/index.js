@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 
 import App from "./App";
 import { store, persistor } from "./store/store";
-
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration.ts";
 import "./index.scss";
 import { PersistGate } from "redux-persist/integration/react";
 import { Elements } from "@stripe/react-stripe-js";
@@ -26,3 +26,4 @@ render(
   </React.StrictMode>,
   rootElement
 );
+serviceWorkerRegistration.register();
