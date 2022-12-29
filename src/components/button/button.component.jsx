@@ -1,4 +1,3 @@
-//three types of button: inverted, default, google sign in
 import { FC, ButtonHTMLAttributes } from "react";
 import "./button.styles.scss";
 export const BUTTON_TYPE_CLASSES = {
